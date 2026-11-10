@@ -16,3 +16,10 @@ module "network" {
   tags   = local.tags
 }
 
+
+module "security_baseline" {
+  source = "../../modules/security-baseline"
+
+  name = var.name
+}
+
